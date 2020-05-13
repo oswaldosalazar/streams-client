@@ -37,10 +37,12 @@ class GoogleAuth extends React.Component {
       return null;
     } else if (this.props.isSignedIn) {
       return (
+        <div >
         <button onClick={this.onSignOutClick} className="mini ui red google button">
           <i className="google icon" />
           Sign Out
         </button>
+        </div>
       );
     } else {
       return (
@@ -57,7 +59,7 @@ class GoogleAuth extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return { isSignedIn: state.auth.isSignedIn }
 }
 

@@ -12,7 +12,9 @@ const Header = () => {
         <Link to="/" className="item">
           All Streams
         </Link>
-        <GoogleAuth />
+        <div style={{ display: 'flex', alignItems: 'center'}}>
+          <GoogleAuth />
+        </div>
       </div>
     </div>
   );
